@@ -1,0 +1,126 @@
+.container__header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+
+/* логотип */
+.logo {
+  color: var(--primary-black-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.logo-web {
+  color: var(--accent-color);
+}
+
+/* ссылки навигации */
+.main-nav__list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.main-nav__item {
+  margin-right: 50px;
+
+  &:last-child {
+    margin-left: 0;
+  }
+}
+
+.main-nav__link {
+  position: relative;
+  color: var(--secondary-title-color);
+  font-weight: 500;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition: color 250ms var(--animation-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.main-nav__link--current {
+  display: block;
+  color: var(--accent-color);
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #2196f3;
+    border-radius: 2px;
+  }
+}
+
+/* Контакты в шапке */
+.nav-contacts {
+  display: flex;
+  margin-left: auto;
+
+  fill: currentColor;
+}
+
+.nav-contacts__item {
+  margin-right: 50px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav-contacts__contact {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition: color 250ms var(--animation-function),
+    fill 250ms var(--animation-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+}
+
+.nav-contacts__icon {
+  margin-right: 10px;
+}
+/* .nav-contacts .item::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item.icon-mail::before {
+  background-image: url('../images/envelope.svg');
+}
+
+.item.icon-telephone::before {
+  background-image: url('../images/smartphone.svg');
+} */

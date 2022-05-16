@@ -1,0 +1,17 @@
+/* убирает 4px у картинок в ссылках */
+img {
+  display: block;
+}
+
+/* убирает точки и margin в списках */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* убирает margin в h */
+.title {
+  padding: 0;
+  margin: 0;
+}

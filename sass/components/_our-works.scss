@@ -1,6 +1,10 @@
 .section-working {
   padding-top: 0px;
   display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .section-working__list {

@@ -6,20 +6,42 @@
 }
 
 .container-footer {
-  text-align: center;
+  @media screen and (max-width: 1199.98px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .logo--white {
   display: flex;
-  justify-content: center;
   margin-bottom: 20px;
 
   color: var(--primary-white-color);
+
+  @media screen and (max-width: 1199.98px) {
+    justify-content: center;
+  }
 }
 
 .address {
   line-height: 1.71;
-  margin-bottom: 60px;
+
+  @media screen and (max-width: 1199.98px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .address__map {
@@ -40,7 +62,9 @@
 }
 
 .contacts {
-  margin-bottom: 60px;
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 60px;
+  }
 }
 
 .contacts__title {
@@ -87,6 +111,9 @@
 
 /* -------footer form--------- */
 .footer-form {
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
 
 .footer-form__title {
@@ -99,6 +126,9 @@
 }
 
 .footer-form__input-wrap {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .footer-form__input-mail {
@@ -118,6 +148,16 @@
   letter-spacing: 0.03em;
 
   transition: border-color 250ms var(--animation-function);
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 
   &:focus-within {
     border-color: #979797;
@@ -167,13 +207,3 @@
   fill: var(--primary-white-color);
   margin-left: 10px;
 }
-
-/* .footer-form .button::after {
-  content: '';
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-
-  background-image: url('../images/icon-send.svg');
-  background-size: contain;
-} */

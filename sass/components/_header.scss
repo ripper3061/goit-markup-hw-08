@@ -1,7 +1,10 @@
+.container__header {
+  border-bottom: 1px solid #ececec;
+}
+
 .mobile-menu__main {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .mobile-menu__open {
@@ -35,9 +38,6 @@
   padding: 48px 25px;
 
   font-weight: 500;
-  font-size: 40px;
-  line-height: 1.18;
-  letter-spacing: 0.02em;
 
   transform: translateX(100%);
 
@@ -53,6 +53,10 @@
 .mobile-hidden__list {
   display: inline-block;
   flex-grow: 1;
+
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
 }
 
 .mobile-hidden__item {
@@ -103,6 +107,7 @@
   &.mail {
     font-size: 24px;
     line-height: 1.17;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -115,6 +120,7 @@
   display: flex;
   font-size: 18px;
   line-height: 1.22;
+  letter-spacing: 0.02em;
 }
 
 .mobile-hidden-soc__item {

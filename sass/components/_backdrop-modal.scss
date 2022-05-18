@@ -30,7 +30,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
+  width: 450px;
   padding: 40px;
 
   opacity: 1;
@@ -41,6 +41,10 @@
 
   transition: transform 250ms var(--animation-function),
     opacity 250ms var(--animation-function);
+
+  @media screen and (min-width: 1200px) {
+    width: 585px;
+  }
 }
 
 .modal__close-button {
@@ -75,4 +79,8 @@
   line-height: 1.15;
 
   color: var(--secondary-title-color);
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.5;
+  }
 }

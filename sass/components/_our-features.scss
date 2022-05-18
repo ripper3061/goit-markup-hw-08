@@ -37,9 +37,13 @@
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-  text-align: center;
+  // text-align: center;
 
   margin-bottom: 10px;
+
+  @media screen and (max-width: 479.98px) {
+    text-align: center;
+  }
 }
 
 .features-list__content {

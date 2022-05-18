@@ -38,10 +38,17 @@
     width: calc(100% / 2 - 30px);
     margin: 15px;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 3 - 30px);
+    margin: 15px;
+  }
 }
 
 .projects-section-title .link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   text-decoration: none;
   color: var(--primary-text-color);
 }
@@ -85,6 +92,7 @@
 }
 
 .projects-section-title .item-text {
+  flex-grow: 1;
   border: 1px solid var(--card-border-color);
   border-top: none;
 

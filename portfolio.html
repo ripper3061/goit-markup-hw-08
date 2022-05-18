@@ -11,13 +11,13 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
     <header class="header">
-      <div class="container container__header mobile-menu">
+      <div class="container mobile-menu">
         <div class="mobile-menu__main">
           <a href="./index.html" class="logo">
             <span class="logo-web">Web</span>Studio</a
@@ -40,12 +40,12 @@
             <li class="mobile-hidden__item">
               <a
                 href="./index.html"
-                class="mobile-hidden__link mobile-hidden__link--current"
+                class="mobile-hidden__link"
                 >Студия</a
               >
             </li>
             <li class="mobile-hidden__item">
-              <a href="./portfolio.html" class="mobile-hidden__link"
+              <a href="./portfolio.html" class="mobile-hidden__link mobile-hidden__link--current"
                 >Портфолио</a
               >
             </li>
@@ -97,9 +97,6 @@
           </button>
         </div>
       </div>
-    </header>
-    <!-- header -->
-    <!-- <header class="header">
       <div class="container container__header">
         <a href="./index.html" class="logo">
           <span class="logo-web">Web</span>Studio</a
@@ -109,12 +106,12 @@
             <li class="main-nav__item">
               <a
                 href="./index.html"
-                class="main-nav__link main-nav__link--current"
+                class="main-nav__link"
                 >Студия</a
               >
             </li>
             <li class="main-nav__item">
-              <a href="./portfolio.html" class="main-nav__link">Портфолио</a>
+              <a href="./portfolio.html" class="main-nav__link main-nav__link--current">Портфолио</a>
             </li>
             <li class="main-nav__item">
               <a href="" class="main-nav__link">Контакты</a>
@@ -138,8 +135,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
-
+    </header>
 
     <!-- main -->
     <main>
@@ -337,6 +333,14 @@
         </form>
         </div>
     </footer>
+
+     <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
 
 </body>
 

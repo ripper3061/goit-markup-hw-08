@@ -7,6 +7,7 @@
 @import './base/container';
 
 @import './components/logo';
+@import './components/header-mobile';
 @import './components/header';
 @import './components/mobile-menu';
 @import './components/hero';
@@ -17,3 +18,6 @@
 @import './components/portfolio-buttons';
 @import './components/portfolio-section';
 @import './components/footer';
+
+@import './components/backdrop-modal';
+@import './components/modal-form';

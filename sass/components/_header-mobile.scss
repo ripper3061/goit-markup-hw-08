@@ -107,6 +107,10 @@
   &.tel {
     font-size: 34px;
     color: var(--accent-color);
+
+    @media screen and (max-width: 479.98px) {
+      font-size: 9vmin;
+    }
   }
 
   &.mail {
@@ -119,6 +123,10 @@
 .mobile-hidden-contacts__contact {
   color: var(--primary-text-color);
   text-decoration: none;
+
+  &.tel--color {
+    color: var(--accent-color);
+  }
 }
 
 .mobile-hidden-soc {
@@ -126,6 +134,10 @@
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+
+  @media screen and (max-width: 479.98px) {
+    font-size: 4vmin;
+  }
 }
 
 .mobile-hidden-soc__item {
